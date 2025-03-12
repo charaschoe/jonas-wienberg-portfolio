@@ -1,22 +1,26 @@
 <template>
 	<div class="min-h-screen flex flex-col">
 		<!-- Hero Section -->
-		<section class="relative py-24 sm:py-32 bg-white">
+		<section class="relative py-24 sm:py-32 bg-neutral-50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
 					class="text-center lg:text-left lg:grid lg:grid-cols-12 lg:gap-8"
 				>
 					<div class="lg:col-span-7">
 						<h1
-							class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6"
+							class="text-4xl sm:text-5xl font-bold font-display tracking-tight text-neutral-900 mb-6 animate-fade-in"
 						>
 							Jonas Wienberg
 						</h1>
-						<p class="text-xl sm:text-2xl text-gray-600 mb-8">
+						<p
+							class="text-xl sm:text-2xl text-neutral-600 mb-8 animate-slide-up"
+						>
 							Interaction Design Student & Digital Innovation
 							Specialist
 						</p>
-						<div class="prose prose-lg text-gray-700 mb-8">
+						<div
+							class="prose prose-lg text-neutral-700 mb-8 animate-slide-up [&>p]:mt-4"
+						>
 							<p>
 								Currently studying Interaction Design at
 								Hochschule für Gestaltung Schwäbisch Gmünd,
@@ -24,7 +28,7 @@
 								combine design innovation, analytical leadership
 								(PMO), and user-centered solutions (UI/UX).
 							</p>
-							<p class="mt-4">
+							<p>
 								As Chair of the General Students' Committee
 								(AStA), I actively advocate for student
 								interests and lead collaborative initiatives
@@ -32,12 +36,9 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-wrap gap-4 justify-center lg:justify-start"
+							class="flex flex-wrap gap-4 justify-center lg:justify-start animate-slide-up"
 						>
-							<NuxtLink
-								to="/projects"
-								class="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
-							>
+							<NuxtLink to="/projects" class="button-primary">
 								View My Work
 								<svg
 									class="ml-2 w-5 h-5"
@@ -53,10 +54,7 @@
 									/>
 								</svg>
 							</NuxtLink>
-							<NuxtLink
-								to="/about"
-								class="inline-flex items-center px-6 py-3 rounded-lg border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
-							>
+							<NuxtLink to="/about" class="button-secondary">
 								About Me
 							</NuxtLink>
 						</div>
@@ -67,10 +65,10 @@
 								class="absolute inset-0 flex items-center justify-center"
 							>
 								<div
-									class="w-64 h-64 bg-blue-100 rounded-full filter blur-3xl opacity-50"
+									class="w-64 h-64 bg-primary-100 rounded-full filter blur-3xl opacity-50"
 								></div>
 							</div>
-							<div class="relative">
+							<div class="relative animate-fade-in">
 								<img
 									src="/images/profilepicture.jpeg"
 									alt="Jonas Wienberg"
@@ -87,12 +85,8 @@
 		<section class="py-16 sm:py-24 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-12">
-					<h2
-						class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-					>
-						Featured Projects
-					</h2>
-					<p class="mt-4 text-lg text-gray-600">
+					<h2 class="section-title">Featured Projects</h2>
+					<p class="mt-4 text-lg text-neutral-600">
 						A selection of my recent work in interaction design and
 						digital innovation.
 					</p>
@@ -104,10 +98,10 @@
 					<div
 						v-for="project in featuredProjects"
 						:key="project.title"
-						class="group relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-200"
+						class="card group"
 					>
 						<div
-							class="aspect-w-16 aspect-h-9 rounded-t-xl overflow-hidden"
+							class="relative w-full aspect-video rounded-t-xl overflow-hidden"
 						>
 							<img
 								:src="project.image"
@@ -116,10 +110,12 @@
 							/>
 						</div>
 						<div class="p-6">
-							<h3 class="text-xl font-semibold text-gray-900">
+							<h3
+								class="text-xl font-semibold font-display text-neutral-900"
+							>
 								{{ project.title }}
 							</h3>
-							<p class="mt-2 text-gray-600">
+							<p class="mt-2 text-neutral-600">
 								{{ project.description }}
 							</p>
 						</div>
@@ -128,7 +124,7 @@
 				<div class="mt-12 text-center">
 					<NuxtLink
 						to="/projects"
-						class="inline-flex items-center px-6 py-3 rounded-lg border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
+						class="button-secondary inline-flex items-center"
 					>
 						View All Projects
 						<svg
@@ -155,6 +151,14 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+	layout: "default",
+	transition: {
+		name: "page",
+		mode: "out-in",
+	},
+});
+
 const featuredProjects = [
 	{
 		title: "Balineum",
@@ -174,20 +178,3 @@ const featuredProjects = [
 	},
 ];
 </script>
-
-<style>
-.aspect-w-16 {
-	position: relative;
-	padding-bottom: 56.25%;
-}
-
-.aspect-w-16 > * {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-</style>

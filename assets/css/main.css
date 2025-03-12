@@ -1,3 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+  }
+}
+
+@layer components {
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    @apply content-[''] bg-primary-600 h-0.5 w-0 left-0 -bottom-1 rounded-full absolute duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200/50;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 
+           transition-colors duration-200 font-medium shadow-sm hover:shadow-md active:scale-[0.98];
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center px-6 py-3 rounded-xl border-2 border-primary-600 text-primary-600 
+           hover:bg-primary-50 transition-colors duration-200 font-medium;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold font-display mb-6 bg-clip-text text-transparent 
+           bg-gradient-to-r from-primary-600 to-accent-600;
+  }
+}
+
+/* Custom Animations */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-300 rounded-full hover:bg-neutral-400 transition-colors;
+}
+
+/* Text Selection */
+::selection {
+  @apply bg-primary-200 text-primary-900;
+}
