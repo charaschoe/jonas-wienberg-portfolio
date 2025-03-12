@@ -1,0 +1,52 @@
+<template>
+	<div class="max-w-4xl mx-auto">
+		<section class="py-12">
+			<h1 class="text-3xl font-bold mb-8">Contact Me</h1>
+			<div class="bg-white rounded-lg shadow-sm p-8">
+				<p class="text-lg text-gray-700 mb-8">
+					I'm always interested in connecting with fellow designers,
+					potential collaborators, and those interested in innovative
+					design solutions. Feel free to reach out!
+				</p>
+				<div class="space-y-6">
+					<div>
+						<h2 class="text-xl font-semibold mb-2">Email</h2>
+						<a
+							href="mailto:jonas.wienberg@hfg.design"
+							class="text-blue-600 hover:text-blue-800"
+						>
+							jonas.wienberg@hfg.design
+						</a>
+					</div>
+					<div>
+						<h2 class="text-xl font-semibold mb-2">Location</h2>
+						<p class="text-gray-700">Schwäbisch Gmünd, Germany</p>
+					</div>
+					<div>
+						<h2 class="text-xl font-semibold mb-2">
+							Professional Networks
+						</h2>
+						<div class="space-x-4">
+							<a
+								href="https://www.linkedin.com/in/jonas-wienberg/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-blue-600 hover:text-blue-800"
+							>
+								LinkedIn
+							</a>
+							<a
+								href="https://www.xing.com/profile/Jonas_Wienberg/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-blue-600 hover:text-blue-800"
+							>
+								Xing
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</template>
