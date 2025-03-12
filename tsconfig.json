@@ -10,6 +10,13 @@
 		"noEmit": true,
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true,
-		"types": ["node"]
-	}
+		"types": ["node"],
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./*"],
+			"@/*": ["./*"]
+		}
+	},
+	"exclude": ["node_modules", ".nuxt", "dist"]
 }

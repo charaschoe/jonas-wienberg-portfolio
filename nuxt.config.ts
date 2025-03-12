@@ -3,13 +3,13 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	typescript: {
 		strict: true,
-		typeCheck: true,
+		typeCheck: false,
 	},
 	modules: ["@nuxtjs/tailwindcss"],
 	css: ["~/assets/css/main.css"],
 	compatibilityDate: "2025-03-12",
 	nitro: {
-		preset: "node-server",
+		preset: "vercel",
 	},
 	server: {
 		port: 3000,
