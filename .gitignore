@@ -22,3 +22,11 @@ logs
 .env
 .env.*
 !.env.example
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vercel
+.vercel
