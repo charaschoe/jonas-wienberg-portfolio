@@ -5,6 +5,7 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "Node",
+		"lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
 		"strict": true,
 		"allowJs": true,
 		"noEmit": true,
@@ -16,7 +17,11 @@
 		"paths": {
 			"~/*": ["./*"],
 			"@/*": ["./*"]
-		}
+		},
+		"jsx": "preserve",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"sourceMap": true
 	},
 	"exclude": ["node_modules", ".nuxt", "dist"]
 }
