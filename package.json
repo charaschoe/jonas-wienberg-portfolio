@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
-		"generate": "nuxt generate",
+		"generate": "nuxt generate --spa",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
 		"vercel-build": "chmod +x build.sh && ./build.sh"
