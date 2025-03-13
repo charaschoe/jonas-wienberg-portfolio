@@ -1,17 +1,16 @@
 {
 	"version": 2,
-	"buildCommand": "NITRO_PRESET=static COMPATIBILITY_DATE=2025-03-13 nuxt generate",
+	"buildCommand": "chmod +x build.sh && ./build.sh",
 	"outputDirectory": ".output/public",
-	"headers": [
+	"routes": [
 		{
-			"source": "/_nuxt/(.*)",
-			"headers": [
-				{
-					"key": "Cache-Control",
-					"value": "public, max-age=31536000, immutable"
-				}
-			]
-		}
-	],
-	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+			"src": "/_nuxt/(.*)",
+			"headers": {
+				"Cache-Control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{ "handle": "filesystem" },
+		{ "src": "/(.*)", "dest": "/index.html" }
+	]
 }

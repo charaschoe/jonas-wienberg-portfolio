@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 
 	nitro: {
-		preset: "static",
+		preset: "vercel",
 	},
 
 	app: {
@@ -35,6 +35,7 @@ export default defineNuxtConfig({
 			],
 			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 		},
+		baseURL: "/",
 	},
 
 	build: {
@@ -42,4 +43,6 @@ export default defineNuxtConfig({
 	},
 
 	compatibilityDate: "2025-03-13",
+
+	ssr: true,
 });

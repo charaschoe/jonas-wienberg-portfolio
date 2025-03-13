@@ -9,7 +9,7 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare",
-		"vercel-build": "NITRO_PRESET=static COMPATIBILITY_DATE=2025-03-13 nuxt generate"
+		"vercel-build": "chmod +x build.sh && ./build.sh"
 	},
 	"dependencies": {
 		"@nuxtjs/tailwindcss": "^6.13.2",
