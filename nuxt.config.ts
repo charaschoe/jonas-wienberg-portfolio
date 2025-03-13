@@ -3,16 +3,24 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
 	devtools: { enabled: true },
+
 	typescript: {
 		strict: true,
 		typeCheck: false,
 		shim: false,
 	},
+
 	modules: ["@nuxtjs/tailwindcss"],
 	css: ["~/assets/css/main.css"],
+
 	nitro: {
 		preset: "vercel",
+		prerender: {
+			crawlLinks: true,
+			routes: ["/"],
+		},
 	},
+
 	app: {
 		head: {
 			title: "Jonas Wienberg - Interaction Design Student & Digital Innovation Specialist",
@@ -32,7 +40,16 @@ export default defineNuxtConfig({
 			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 		},
 	},
+
 	build: {
 		transpile: ["vue"],
 	},
+
+	runtimeConfig: {
+		public: {
+			analytics: false,
+		},
+	},
+
+	compatibilityDate: "2025-03-13",
 });
