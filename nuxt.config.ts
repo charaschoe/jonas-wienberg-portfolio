@@ -44,5 +44,17 @@ export default defineNuxtConfig({
 
 	compatibilityDate: "2025-03-13",
 
-	ssr: true,
+	ssr: false,
+
+	router: {
+		options: {
+			strict: false,
+		},
+	},
+
+	experimental: {
+		payloadExtraction: false,
+	},
+
+	trailingSlash: false,
 });

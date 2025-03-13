@@ -2,6 +2,8 @@
 	"version": 2,
 	"buildCommand": "chmod +x build.sh && ./build.sh",
 	"outputDirectory": ".output/public",
+	"cleanUrls": true,
+	"trailingSlash": false,
 	"routes": [
 		{
 			"src": "/_nuxt/(.*)",
@@ -10,7 +12,13 @@
 			},
 			"continue": true
 		},
-		{ "handle": "filesystem" },
-		{ "src": "/(.*)", "dest": "/index.html" }
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/(.*)",
+			"status": 200,
+			"dest": "/index.html"
+		}
 	]
 }
