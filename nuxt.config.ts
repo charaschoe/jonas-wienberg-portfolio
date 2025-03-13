@@ -13,6 +13,10 @@ export default defineNuxtConfig({
 	compatibilityDate: "2025-03-12",
 	nitro: {
 		preset: "vercel",
+		prerender: {
+			crawlLinks: true,
+			routes: ["/"],
+		},
 	},
 	app: {
 		head: {
@@ -32,5 +36,11 @@ export default defineNuxtConfig({
 			],
 			link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 		},
+	},
+	build: {
+		transpile: ["vue"],
+	},
+	experimental: {
+		payloadExtraction: false,
 	},
 });

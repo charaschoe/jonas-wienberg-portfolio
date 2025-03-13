@@ -5,7 +5,18 @@
 			"src": "nuxt.config.ts",
 			"use": "@nuxtjs/vercel-builder",
 			"config": {
-				"serverFiles": [".nuxt/dist/server/**/*", "server/**/*"]
+				"serverFiles": [
+					".nuxt/dist/server/**/*",
+					".nuxt/dist/server/_nuxt/**/*",
+					"server/**/*"
+				],
+				"generateStaticRoutes": true,
+				"postcss": {
+					"plugins": {
+						"tailwindcss": {},
+						"autoprefixer": {}
+					}
+				}
 			}
 		}
 	],
@@ -17,6 +28,17 @@
 				"Cache-Control": "public, max-age=0, must-revalidate",
 				"Service-Worker-Allowed": "/"
 			}
+		},
+		{
+			"src": "/_nuxt/(.*)",
+			"headers": {
+				"Cache-Control": "public,max-age=31536000,immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "/(.*)",
+			"dest": "/"
 		}
 	]
 }
