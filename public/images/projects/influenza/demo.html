@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>INFLUENZA Visualization</title>
+		<style>
+			body {
+				background: #212121;
+				color: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				margin: 0;
+				font-family: Arial, sans-serif;
+				overflow: hidden;
+			}
+
+			.header {
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding: 15px;
+			}
+
+			.canvas {
+				width: 800px;
+				height: 600px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.visualization {
+				width: 700px;
+				height: 500px;
+				background: radial-gradient(circle, #333 10%, #212121 70%);
+				border-radius: 50%;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.country {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+
+			.germany {
+				border: 3px solid #dd0000;
+				border-radius: 50%;
+				width: 80%;
+				height: 80%;
+				position: absolute;
+			}
+
+			.japan {
+				border: 3px solid #bc002d;
+				border-radius: 50%;
+				width: 70%;
+				height: 70%;
+				position: absolute;
+			}
+
+			.uae {
+				border: 3px solid #00732f;
+				border-radius: 50%;
+				width: 60%;
+				height: 60%;
+				position: absolute;
+			}
+
+			.controls {
+				position: absolute;
+				bottom: 20px;
+				display: flex;
+				gap: 10px;
+			}
+
+			.case-model-option {
+				background: #333;
+				padding: 8px 15px;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+
+			.year-control {
+				position: absolute;
+				bottom: 60px;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>INFLUENZA</h1>
+			<p>Interactive data visualization by Jonas Wienberg</p>
+		</div>
+
+		<div class="canvas">
+			<div class="visualization">
+				<div class="country germany"></div>
+				<div class="country japan"></div>
+				<div class="country uae"></div>
+			</div>
+		</div>
+
+		<div class="year-control">
+			<label for="year">Year:</label>
+			<input
+				type="range"
+				id="year"
+				name="year"
+				min="2009"
+				max="2024"
+				value="2009"
+			/>
+			<div id="year-display">2009</div>
+		</div>
+
+		<div class="controls">
+			<div class="case-model-option">Influenza-like Illnesses (ILI)</div>
+			<div class="case-model-option">
+				Acute Respiratory Infections (ARI)
+			</div>
+			<div class="case-model-option">Severe ARI Cases</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#212121"/>
+  
+  <!-- Title -->
+  <text x="30" y="50" font-family="Arial" font-size="24" fill="white">INFLUENZA</text>
+  <text x="30" y="80" font-family="Arial" font-size="14" fill="#aaaaaa">Interactive data visualization by Jonas Wienberg</text>
+  
+  <!-- Visualization Circles -->
+  <g transform="translate(400, 300)">
+    <!-- Background Circle -->
+    <circle cx="0" cy="0" r="250" fill="#333333" opacity="0.3"/>
+    
+    <!-- Germany (Black-Red-Gold) -->
+    <circle cx="0" cy="0" r="230" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="0" r="210" fill="none" stroke="#DD0000" stroke-width="3" stroke-dasharray="5,5"/>
+    <circle cx="0" cy="0" r="190" fill="none" stroke="#FFCE00" stroke-width="3" stroke-dasharray="7,7"/>
+    
+    <!-- Japan (Red) -->
+    <circle cx="0" cy="0" r="170" fill="none" stroke="#BC002D" stroke-width="3"/>
+    
+    <!-- UAE (Green-White-Red) -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#00732F" stroke-width="3" stroke-dasharray="10,5"/>
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10,5"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#FF0000" stroke-width="3" stroke-dasharray="10,5"/>
+    
+    <!-- Iran (Green-White-Red) -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#239F40" stroke-width="3"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#DA0000" stroke-width="3"/>
+    
+    <!-- Iceland (Blue-Red) -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#02529C" stroke-width="3"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#DC1E35" stroke-width="3"/>
+    
+    <!-- Data Points (Simulated) -->
+    <!-- Germany Data -->
+    <path d="M0,230 C50,210 100,200 150,220 C200,240 230,200 230,180" fill="none" stroke="#FFCE00" stroke-width="2"/>
+    
+    <!-- Japan Data -->
+    <path d="M0,170 C40,150 80,160 120,140 C160,120 170,150 170,170" fill="none" stroke="#BC002D" stroke-width="2"/>
+    
+    <!-- UAE Data -->
+    <path d="M0,150 C30,140 60,130 90,135 C120,140 150,130 150,120" fill="none" stroke="#00732F" stroke-width="2"/>
+    
+    <!-- Radial Lines (Months) -->
+    <line x1="0" y1="0" x2="0" y2="-250" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="125" y2="-216.5" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="216.5" y2="-125" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="250" y2="0" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="216.5" y2="125" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="125" y2="216.5" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="250" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-125" y2="216.5" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-216.5" y2="125" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-250" y2="0" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-216.5" y2="-125" stroke="#555555" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-125" y2="-216.5" stroke="#555555" stroke-width="1"/>
+    
+    <!-- Month Labels -->
+    <text x="0" y="-260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Jan</text>
+    <text x="130" y="-226.5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Feb</text>
+    <text x="226.5" y="-130" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Mar</text>
+    <text x="260" y="0" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Apr</text>
+    <text x="226.5" y="130" font-family="Arial" font-size="12" fill="white" text-anchor="middle">May</text>
+    <text x="130" y="226.5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Jun</text>
+    <text x="0" y="260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Jul</text>
+    <text x="-130" y="226.5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Aug</text>
+    <text x="-226.5" y="130" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Sep</text>
+    <text x="-260" y="0" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Oct</text>
+    <text x="-226.5" y="-130" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Nov</text>
+    <text x="-130" y="-226.5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Dec</text>
+  </g>
+  
+  <!-- Controls -->
+  <g transform="translate(400, 520)">
+    <rect x="-150" y="0" width="300" height="20" fill="#333333" rx="10" ry="10"/>
+    <text x="-140" y="15" font-family="Arial" font-size="12" fill="white">Year: 2009</text>
+    <circle cx="-50" cy="10" r="8" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Filter Options -->
+  <g transform="translate(400, 560)">
+    <rect x="-180" y="0" width="120" height="25" fill="#333333" rx="12.5" ry="12.5"/>
+    <text x="-170" y="17" font-family="Arial" font-size="12" fill="white">ILI Cases</text>
+    
+    <rect x="-50" y="0" width="120" height="25" fill="#333333" rx="12.5" ry="12.5"/>
+    <text x="-40" y="17" font-family="Arial" font-size="12" fill="white">ARI Cases</text>
+    
+    <rect x="80" y="0" width="120" height="25" fill="#333333" rx="12.5" ry="12.5"/>
+    <text x="90" y="17" font-family="Arial" font-size="12" fill="white">Severe ARI</text>
+  </g>
+</svg> 

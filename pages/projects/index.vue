@@ -48,27 +48,38 @@
 const projects = ref([
 	{
 		id: 1,
-		title: "Project One",
-		description: "A modern web application built with Vue.js and Nuxt.",
-		image: "/images/project-1.jpg",
-		technologies: ["Vue.js", "Nuxt", "TailwindCSS"],
-		link: "#",
+		title: "BALINEUM",
+		description:
+			"A unified dial system transforming bathroom interactions with adaptive water control and NFC-powered user profiles.",
+		image: "/images/projects/balineum/overview.jpg",
+		technologies: [
+			"UX Research",
+			"Hardware Engineering",
+			"Tangible Interface Design",
+		],
+		link: "/projects/balineum",
 	},
 	{
 		id: 2,
-		title: "Project Two",
-		description: "Full-stack application with real-time features.",
-		image: "/images/project-2.jpg",
-		technologies: ["Node.js", "Express", "MongoDB"],
-		link: "#",
+		title: "KonradAI - Visa Application Helper",
+		description:
+			"Redesigning the German Federal Foreign Office's visa application platform to streamline the process for international users.",
+		image: "/images/projects/konradai/overview.jpg",
+		technologies: [
+			"UX Research",
+			"Information Architecture",
+			"Chrome Extension",
+		],
+		link: "/projects/konradai",
 	},
 	{
 		id: 3,
-		title: "Project Three",
-		description: "Mobile-first responsive web design project.",
-		image: "/images/project-3.jpg",
-		technologies: ["HTML", "CSS", "JavaScript"],
-		link: "#",
+		title: "INFLUENZA",
+		description:
+			"Interactive dashboard tracking WHO FluNet data (2009-2024) across six nations with radial visualizations of pandemic patterns.",
+		image: "/images/projects/influenza/overview.jpg",
+		technologies: ["Data Visualization", "JavaScript", "WHO FluNet Data"],
+		link: "/projects/influenza",
 	},
 ]);
 </script>

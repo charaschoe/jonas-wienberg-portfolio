@@ -1,0 +1,127 @@
+body {
+	background: #212121;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	overflow: hidden;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px; /* Add padding of 15px on the left and right sides */
+}
+
+.header h1 {
+	margin-bottom: 5px; /* Reduce the margin between the h1 and p elements */
+	margin-left: 10px;
+}
+
+.header p {
+	margin-top: 5px; /* Optional: further reduce the top margin of the p element */
+	margin-left: 10px;
+}
+
+.controls {
+	position: absolute;
+	margin-left: 10px;
+	left: 20px; /* Positioniert die Box auf der linken Seite */
+	top: 50%;
+	transform: translateY(-50%); /* Zentriert die Box vertikal */
+	display: flex;
+	flex-direction: column;
+	align-items: left; /* Zentriert den Text horizontal */
+	text-align: left; /* Zentriert den Text horizontal */
+}
+
+.controls label {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+.case-model-option {
+	cursor: pointer;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	color: white;
+}
+
+.case-model-option.selected {
+	color: #ff4c4c; /* Highlight selected option */
+}
+
+.case-model-option:hover {
+	color: #ff4c4c; /* Highlight hovered option */
+}
+.year-control {
+	position: fixed;
+	bottom: 10px;
+	width: 80%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+*/ .year-control label {
+	margin: 5px;
+}
+
+.year-control input {
+	margin: 5px;
+}
+
+#year-display {
+	margin-left: 10px;
+}
+
+#months-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.month-label {
+	font-size: 1.2em;
+	color: white;
+	text-transform: uppercase;
+	pointer-events: none;
+	font-family: Arial, sans-serif;
+	position: absolute; /* Ensure the labels are positioned absolutely */
+}
+
+.canvas,
+#months-container {
+	position: absolute;
+	width: calc(
+		100% - 60px
+	); /* Adjust width to be responsive and leave 20px margin */
+	height: calc(
+		80% - 20px
+	); /* Adjust height to be responsive and leave 20px margin */
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.dot {
+	position: absolute;
+	border-radius: 50%; /* Ensure dots are round */
+	border: 1px solid #fff; /* Add a border for better visibility */
+}
+
+.info-box {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	pointer-events: none;
+	z-index: 1000;
+}
