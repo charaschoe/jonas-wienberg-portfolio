@@ -1,6 +1,5 @@
 {
 	"version": 2,
-	"framework": "nuxt",
 	"builds": [
 		{
 			"src": "nuxt.config.ts",
@@ -42,7 +41,6 @@
 			"dest": "/"
 		}
 	],
-	"env": {
-		"NITRO_PRESET": "vercel"
-	}
+	"buildCommand": "NITRO_PRESET=vercel nuxt build",
+	"outputDirectory": ".output"
 }

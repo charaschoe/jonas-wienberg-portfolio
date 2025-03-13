@@ -16,19 +16,6 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: ["/"],
 		},
-		compatibility: {
-			nuxt: "^3.10.3",
-		},
-		future: {
-			nativeSWR: true,
-		},
-		timing: true,
-		compressPublicAssets: true,
-		storage: {
-			fs: {
-				driver: "fs",
-			},
-		},
 	},
 	app: {
 		head: {
@@ -51,8 +38,5 @@ export default defineNuxtConfig({
 	},
 	build: {
 		transpile: ["vue"],
-	},
-	experimental: {
-		payloadExtraction: false,
 	},
 });
