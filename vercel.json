@@ -35,5 +35,5 @@
 		}
 	],
 	"buildCommand": "NITRO_PRESET=vercel nuxt build",
-	"outputDirectory": ".output/public"
+	"outputDirectory": ".nuxt/dist"
 }
