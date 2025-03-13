@@ -2,7 +2,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-	devtools: { enabled: true },
+	devtools: { enabled: false },
 
 	typescript: {
 		strict: true,
@@ -15,10 +15,6 @@ export default defineNuxtConfig({
 
 	nitro: {
 		preset: "vercel",
-		prerender: {
-			crawlLinks: true,
-			routes: ["/"],
-		},
 	},
 
 	app: {
@@ -43,12 +39,6 @@ export default defineNuxtConfig({
 
 	build: {
 		transpile: ["vue"],
-	},
-
-	runtimeConfig: {
-		public: {
-			analytics: false,
-		},
 	},
 
 	compatibilityDate: "2025-03-13",
