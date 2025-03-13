@@ -15,8 +15,9 @@ export default defineNuxtConfig({
 
 	nitro: {
 		preset: "vercel",
-		output: {
-			dir: ".nuxt/dist",
+		prerender: {
+			crawlLinks: true,
+			routes: ["/"],
 		},
 	},
 
