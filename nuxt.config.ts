@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 					content: "width=device-width, initial-scale=1",
 				},
 				{
-					hid: "description",
+					key: "description",
 					name: "description",
 					content:
 						"Portfolio of Jonas Wienberg, showcasing projects in Interaction Design, UX Research, and Digital Innovation.",
