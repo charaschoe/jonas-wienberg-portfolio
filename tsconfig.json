@@ -9,7 +9,7 @@
 		"noEmit": true,
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true,
-		"types": ["node"],
+		"types": ["node", "nuxt"],
 		"skipLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
