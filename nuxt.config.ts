@@ -10,12 +10,24 @@ export default defineNuxtConfig({
 	},
 	modules: ["@nuxtjs/tailwindcss"],
 	css: ["~/assets/css/main.css"],
-	compatibilityDate: "2025-03-12",
 	nitro: {
 		preset: "vercel",
 		prerender: {
 			crawlLinks: true,
 			routes: ["/"],
+		},
+		compatibility: {
+			nuxt: "^3.10.3",
+		},
+		future: {
+			nativeSWR: true,
+		},
+		timing: true,
+		compressPublicAssets: true,
+		storage: {
+			fs: {
+				driver: "fs",
+			},
 		},
 	},
 	app: {
