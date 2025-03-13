@@ -4,10 +4,13 @@
 		<main>
 			<NuxtPage />
 		</main>
+		<Analytics />
 	</div>
 </template>
 
 <script setup>
+import { Analytics } from '@vercel/analytics/vue'
+
 useHead({
 	title: "Jonas Wienberg - Portfolio",
 	meta: [
