@@ -1,46 +1,53 @@
 <template>
-	<div class="max-w-6xl mx-auto">
-		<section class="py-12">
-			<h1 class="text-3xl font-bold mb-8">My Projects</h1>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				<!-- Project Card Template -->
-				<div
-					v-for="project in projects"
-					:key="project.id"
-					class="bg-white rounded-lg shadow-sm overflow-hidden"
-				>
-					<img
-						:src="project.image"
-						:alt="project.title"
-						class="w-full h-48 object-cover"
-					/>
-					<div class="p-6">
-						<h3 class="text-xl font-semibold mb-2">
-							{{ project.title }}
-						</h3>
-						<p class="text-gray-600 mb-4">
-							{{ project.description }}
-						</p>
-						<div class="flex flex-wrap gap-2 mb-4">
-							<span
-								v-for="tech in project.technologies"
-								:key="tech"
-								class="px-2 py-1 bg-gray-100 rounded text-sm"
-							>
-								{{ tech }}
-							</span>
-						</div>
-						<a
-							:href="project.link"
-							target="_blank"
-							class="text-blue-600 hover:text-blue-800"
-						>
-							View Project →
-						</a>
+	<div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+		<h1 class="text-4xl font-light mb-16 tracking-tight">Projects</h1>
+
+		<!-- Project Grid -->
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-20">
+			<!-- Project Card Template -->
+			<div
+				v-for="(project, index) in projects"
+				:key="project.id"
+				class="md:col-span-6 lg:col-span-4"
+			>
+				<div class="project-card">
+					<div class="aspect-[4/3] overflow-hidden mb-4">
+						<img
+							:src="project.image"
+							:alt="project.title"
+							class="w-full h-full object-cover"
+						/>
 					</div>
+					<h3 class="text-lg font-medium mb-2">
+						{{ project.title }}
+					</h3>
+					<p class="text-sm text-gray-700 mb-4 leading-relaxed">
+						{{ project.description }}
+					</p>
+					<div class="flex flex-wrap gap-2 mb-4">
+						<span
+							v-for="tech in project.technologies"
+							:key="tech"
+							class="text-xs text-gray-600"
+						>
+							{{ tech
+							}}{{
+								project.technologies.indexOf(tech) <
+								project.technologies.length - 1
+									? " / "
+									: ""
+							}}
+						</span>
+					</div>
+					<NuxtLink
+						:to="project.link"
+						class="text-sm uppercase tracking-widest hover:underline"
+					>
+						View Project
+					</NuxtLink>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
 </template>
 
@@ -83,3 +90,13 @@ const projects = ref([
 	},
 ]);
 </script>
+
+<style scoped>
+.project-card {
+	transition: opacity 0.3s ease;
+}
+
+.project-card:hover {
+	opacity: 0.9;
+}
+</style>

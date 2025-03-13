@@ -14,31 +14,37 @@
 </style> -->
 
 <template>
-	<header class="bg-white shadow-sm">
-		<nav class="container mx-auto px-4 py-4">
+	<header class="border-b border-gray-100">
+		<nav class="max-w-5xl mx-auto px-6 py-6">
 			<div class="flex items-center justify-between">
-				<NuxtLink to="/" class="text-xl font-bold text-gray-800">
-					Jonas Wienberg
+				<NuxtLink to="/" class="text-lg font-light tracking-wide">
+					JONAS WIENBERG
 				</NuxtLink>
-				<div class="space-x-6">
-					<NuxtLink to="/" class="text-gray-600 hover:text-gray-900"
-						>Home</NuxtLink
+				<div class="space-x-8">
+					<NuxtLink
+						to="/"
+						class="text-sm uppercase tracking-widest hover:opacity-60 transition-opacity"
 					>
+						Home
+					</NuxtLink>
 					<NuxtLink
 						to="/projects"
-						class="text-gray-600 hover:text-gray-900"
-						>Projects</NuxtLink
+						class="text-sm uppercase tracking-widest hover:opacity-60 transition-opacity"
 					>
+						Projects
+					</NuxtLink>
 					<NuxtLink
 						to="/about"
-						class="text-gray-600 hover:text-gray-900"
-						>About</NuxtLink
+						class="text-sm uppercase tracking-widest hover:opacity-60 transition-opacity"
 					>
+						About
+					</NuxtLink>
 					<NuxtLink
 						to="/contact"
-						class="text-gray-600 hover:text-gray-900"
-						>Contact</NuxtLink
+						class="text-sm uppercase tracking-widest hover:opacity-60 transition-opacity"
 					>
+						Contact
+					</NuxtLink>
 				</div>
 			</div>
 		</nav>
@@ -47,4 +53,8 @@
 
 <script lang="ts" setup></script>
 
-<style scoped></style>
+<style scoped>
+a.router-link-active {
+	opacity: 0.6;
+}
+</style>

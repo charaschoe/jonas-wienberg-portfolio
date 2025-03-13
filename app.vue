@@ -1,7 +1,7 @@
 <template>
-	<div class="min-h-screen bg-gray-50">
+	<div class="min-h-screen bg-white">
 		<Header />
-		<main class="container mx-auto px-4 py-8">
+		<main>
 			<NuxtPage />
 		</main>
 	</div>
@@ -21,5 +21,25 @@ useHead({
 			content: "Jonas Wienberg, Portfolio, Developer, Projects",
 		},
 	],
+	link: [
+		{
+			rel: "stylesheet",
+			href: "https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500&display=swap",
+		},
+	],
 });
 </script>
+
+<style>
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+</style>
