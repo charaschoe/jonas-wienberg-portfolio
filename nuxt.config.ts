@@ -14,10 +14,6 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: "vercel",
 	},
-	server: {
-		port: 3000,
-		host: "0.0.0.0",
-	},
 	app: {
 		head: {
 			title: "Jonas Wienberg - Interaction Design Student & Digital Innovation Specialist",
