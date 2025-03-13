@@ -20,12 +20,12 @@
 				national color identities.
 			</p>
 
-			<!-- Project Image Placeholder - Replace with actual image when available -->
+			<!-- Project Visualization -->
 			<div class="mb-8">
 				<img
-					src="/images/projects/influenza/overview.jpg"
-					alt="INFLUENZA Dashboard Overview"
-					class="w-full rounded-lg"
+					src="/images/projects/influenza/visualization.svg"
+					alt="INFLUENZA Data Visualization"
+					class="w-full rounded-lg bg-gray-800"
 				/>
 			</div>
 		</div>
@@ -47,15 +47,6 @@
 					peaks vs single temperate spikes
 				</li>
 			</ul>
-
-			<!-- Key Features Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/influenza/visualization.svg"
-					alt="Data Pattern Visualization"
-					class="w-full rounded-lg bg-gray-800"
-				/>
-			</div>
 		</section>
 
 		<!-- Technical Details Section -->
@@ -69,15 +60,6 @@
 				<li>1488ms avg load time (Chromium engine)</li>
 				<li>7/64 FluNet categories mapped</li>
 			</ul>
-
-			<!-- Technical Details Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/influenza/visualization.svg"
-					alt="Technical Architecture Diagram"
-					class="w-full rounded-lg bg-gray-800"
-				/>
-			</div>
 		</section>
 
 		<!-- Design System Section -->
@@ -104,15 +86,6 @@
 					intersections
 				</li>
 			</ul>
-
-			<!-- Design System Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/influenza/overview.jpg"
-					alt="Color System Visualization"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Live Demo Section -->
@@ -129,15 +102,6 @@
 				>
 					Launch Live Demo
 				</a>
-			</div>
-
-			<!-- Demo Preview Image Placeholder -->
-			<div class="mt-8 mb-8">
-				<img
-					src="/images/projects/influenza/overview.jpg"
-					alt="Interactive Demo Preview"
-					class="w-full rounded-lg"
-				/>
 			</div>
 		</section>
 

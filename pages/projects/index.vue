@@ -64,7 +64,7 @@ const projects = ref([
 		title: "KonradAI - Visa Application Helper",
 		description:
 			"Redesigning the German Federal Foreign Office's visa application platform to streamline the process for international users.",
-		image: "/images/projects/konradai/overview.jpg",
+		image: "/images/projects/konradai/konradai_screenshot.jpg",
 		technologies: [
 			"UX Research",
 			"Information Architecture",
@@ -77,7 +77,7 @@ const projects = ref([
 		title: "INFLUENZA",
 		description:
 			"Interactive dashboard tracking WHO FluNet data (2009-2024) across six nations with radial visualizations of pandemic patterns.",
-		image: "/images/projects/influenza/overview.jpg",
+		image: "/images/projects/influenza/visualization.svg",
 		technologies: ["Data Visualization", "JavaScript", "WHO FluNet Data"],
 		link: "/projects/influenza",
 	},

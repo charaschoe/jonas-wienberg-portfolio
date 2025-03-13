@@ -17,7 +17,7 @@
 				hardware engineering and tangible interface design.
 			</p>
 
-			<!-- Project Image Placeholder - Replace with actual image when available -->
+			<!-- Project Image -->
 			<div class="mb-8">
 				<img
 					src="/images/projects/balineum/overview.jpg"
@@ -44,15 +44,6 @@
 				implementing IP68-rated seals and radial groove patterning
 				validated through 3D-printed foam prototypes.
 			</p>
-
-			<!-- Research Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/balineum/overview.jpg"
-					alt="Research Process"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Interaction Architecture Section -->
@@ -69,15 +60,6 @@
 				changes. Magnetic docking enables tool-free reconfiguration,
 				while inductive charging maintains IP68 compliance.
 			</p>
-
-			<!-- Interaction Architecture Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/balineum/overview.jpg"
-					alt="Interaction Architecture"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- User Profiles Section -->
@@ -101,15 +83,6 @@
 					°C thermal caps
 				</li>
 			</ul>
-
-			<!-- User Profiles Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/balineum/overview.jpg"
-					alt="User Profiles Interface"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Key Insights Section -->
@@ -130,15 +103,6 @@
 				insights remained strictly conceptual, focusing on interaction
 				design exploration without engineering execution.
 			</p>
-
-			<!-- Key Insights Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/balineum/overview.jpg"
-					alt="Design Insights"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Project Technologies -->

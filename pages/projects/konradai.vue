@@ -20,11 +20,11 @@
 				complex bureaucratic requirements.
 			</p>
 
-			<!-- Project Image Placeholder - Replace with actual image when available -->
+			<!-- Project Image -->
 			<div class="mb-8">
 				<img
-					src="/images/projects/konradai/overview.jpg"
-					alt="KonradAI Project Overview"
+					src="/images/projects/konradai/konradai_screenshot.jpg"
+					alt="KonradAI Project - German Federal Foreign Office's RKS Appointment platform"
 					class="w-full rounded-lg"
 				/>
 			</div>
@@ -54,15 +54,6 @@
 				through each step? How can we simplify a process complicated by
 				opaque internal workflows?
 			</p>
-
-			<!-- Key Challenges Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/konradai/overview.jpg"
-					alt="Problem Analysis"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Solution Approach Section -->
@@ -77,15 +68,6 @@
 				reimagined appointment system introduced dynamic slot releases
 				and status tracking to reduce uncertainty.
 			</p>
-
-			<!-- Solution Approach Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/konradai/overview.jpg"
-					alt="Solution Framework"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Refined User Journey Section -->
@@ -103,15 +85,6 @@
 				redundancies and empowers users to navigate the process with
 				confidence.
 			</p>
-
-			<!-- User Journey Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/konradai/overview.jpg"
-					alt="User Journey Map"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Outcome Section -->
@@ -125,15 +98,6 @@
 				transparency can alleviate pain points in even the most rigid
 				institutional frameworks.
 			</p>
-
-			<!-- Outcome Image Placeholder -->
-			<div class="mb-8">
-				<img
-					src="/images/projects/konradai/overview.jpg"
-					alt="Chrome Extension Interface"
-					class="w-full rounded-lg"
-				/>
-			</div>
 		</section>
 
 		<!-- Project Technologies -->
